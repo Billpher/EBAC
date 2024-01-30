@@ -1,0 +1,105 @@
+-------------------Comandos Git------------------
+//registrar o git na maquina
+git config --global user.name ''
+git config --global user.email ''
+
+//iniciar o git
+git init .
+
+//Verificar Status de um projeto
+git status
+
+//adicionar o arquivo no repositorio novos/editados
+git add NomeDoArquivo
+
+//adiconar todos os arquivos novos/editados
+git add .
+
+//remover arquivo
+git rm --cached NomeDoArquivo
+
+//adiconar mensagens sobre alteraçoes realizadas
+git commit (Editor de texto) / CRTL + o (Salva) / CRTL + X (Sai)
+git commit -m  "texto do que foi feito"
+git commit -am "texto do que foi alterado"
+
+//Logs dos commits
+git log
+git log -n 2 ou 3 ou ... (retorna os n ultimos)
+git log --oneline (Log resumido)
+git log --stat (Tamanho das modificações)
+
+//desfazer modificaçoes (antes de comitar)
+git checkout NomeDoArquivo
+
+//desfazer modificaçoes (depois de comitar)
+git checkout idDoCommit
+
+//reverter commits (não apaga a mudança feita apenas desfaz)
+git revert HEAD idDoCommit
+
+//listagem de Branch
+git branch
+
+//navegacoes em branch
+git checkout NomeDaBranch
+
+//criar Branch
+git branch NomeDaNovaBranch
+
+//trocar de branch e criar uma nova
+git checkout -b NomeDaNovaBranch
+
+//deletar branch
+git branch -D NomeDaBranch
+
+//Copir os dados de uma Branch para outra
+git merge NomeDaBranch que quer as informaçoes (tem que estar na branch que ira receber essas informaçoes)
+
+//sincronizar o projeto com o github
+git push (por alteracao)
+git push origin NomeDaBranch (sincronizar com uma nova branch)
+
+//sincronizar o git com o projeto
+git pull
+
+//sincronizar com um novo repositorio
+git clone URL -l nomedapasta
+
+//sincronizar com um repositorio
+git remote add origin link
+
+-------------------Comandos Windows------------
+//criar pasta
+mkdir NomeDaPasta
+
+//criar arquivo com texto
+echo "texto" > NomeDoArquivo
+
+//Limpar 
+CRTL + L
+
+//ver conteudo da pasta
+ls
+dir
+
+//ver conteudo de um txt
+cat NomeDoArquivo
+-----------------Padrão de Nomenclatura----------
+Padrões para nomear commits 
+O padrão para escrever as mensagens para os commits é: 
+
+Chore: usado para pequenas tarefas: 
+gitcommit–m “chore: removendo arquivo.txt” 
+
+Fix: correções: 
+gitcommit–m “fix: correção no cálculo de médias” 
+
+Feat: inclusão de funcionalidade: 
+gitcommit–m “feat: inclusão de função para calcular mediana” 
+
+Docs: atualização de documentação: 
+gitcommit–m “atualizando o changelog.md”
+
+-------------Subir Servidor com Live Server---------------
+Clicar em Go LIve menu inferior dio Visual Studio

@@ -1,19 +1,28 @@
-h1 {
-    color: green;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h2 {
-    color: green;
+header li{
+    display: inline;
 }
 
-#economy h2{
-    color: gold;
+.container {
+    width: 1366px;
+    margin: 0 auto;
 }
 
-.creation-date {
-    color: #ccc;
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-*{
-    color: red;
+.articles article img{
+    height: 180px;
+}
+
+.articles article {
+    width: 30%;
 }

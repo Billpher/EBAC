@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+margin-top: 300px;
+}
+
+.container h2 {
+    margin-bottom: 50px;
+}
+
+form input, 
+button, 
+textarea {
+    display: block;
+    width: 500px;
+    margin: 8px 0;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 50px;
+}
+
+form button {
+    background-color: #09d36e;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}

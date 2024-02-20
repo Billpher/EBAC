@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 450px;
+}
+
+.container h1{
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: grid;
+    margin-top: 20px;
+}
+
+form input {
+    width: 500px;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+form button {
+    border: none;
+    padding: 8px;
+    background-color: #09d36e;
+    cursor: pointer;
+}

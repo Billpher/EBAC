@@ -10,13 +10,16 @@
     <div class="container">
         <h1>EBAC Banking</h1>
         <h2>Depositos</h2>
-        <form>
+        <form id="formDeposito">
             <input id="nome" type="text" placeholder="Nome completo do usuario" required>
+            <p class="nomeIncompleto">O nome precisa ser completo</p>
             <input id="conta" type="number" placeholder="Numero da conta" required>
             <input id="deposito" type="number" placeholder="valor" required>
             <textarea id="descricao" placeholder="Observaçao"></textarea>
             <button id="BtnDepositar" type="submit">Depositar</button>
         </form>
+        <p class="sucesso"></p>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>

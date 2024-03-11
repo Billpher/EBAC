@@ -14,8 +14,10 @@ $(document).ready(function() {
     $('form').on('submit', function(e) {
         e.preventDefault();
 
+        //pega link da imagem
         const enderecoDaImagem = $('#imagemNova').val();
 
+        //cria um novo li
         const novoItem = $('<li style="display: none"></li>');
 
         $(`
@@ -31,6 +33,7 @@ $(document).ready(function() {
         $(novoItem).appendTo('ul');
         $(novoItem).fadeIn(3000);
 
+        //limpa o campo
         $('#imagemNova').val(' ');
 
     })

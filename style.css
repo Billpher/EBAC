@@ -64,10 +64,6 @@ nav .menu li:hover .submenu {
     grid-template-columns: 70% 30%;
 }
 
-.noticia img {
-    max-width: 100%;
-}
-
 .destaque {
     margin-bottom: 56px;
 }
@@ -79,6 +75,10 @@ nav .menu li:hover .submenu {
 
 .destaque .noticia img {
     margin-right: 8px;
+}
+
+.noticia img {
+    max-width: 100%;
 }
 
 section h2 {

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Titulo do Site</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a href="#inicio" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#produtos" class="nav-link">Produto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#promocoes" class="nav-link">Promoçoes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="avisos" type="button" class="btn btn-warning">Avisos</button>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <h2>Inicio</h2>
+        </section>
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div>
+                <nav class="nav nav-tabs">
+                    <button data-bs-toggle="tab" data-bs-target="#elect" class="nav-link active" type="button">Eletronicos</button>
+                    <button data-bs-toggle="tab" data-bs-target="#roup" class="nav-link" type="button">Roupas</button>
+                    <button data-bs-toggle="tab" data-bs-target="#jog" class="nav-link" type="button">Jogos</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="elect">
+                        Eletronicos
+                    </div>
+                    <div class="tab-pane" id="roup">
+                        Roupas
+                    </div>
+                    <div class="tab-pane" id="jog">
+                        Jogos
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="promocoes">
+            <h2>Promocoes</h2>
+        </section>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast" id="mensagensAlerta" data-bs-autohide="false">
+            <header class="toast-header">
+                <strong>Importante</strong>
+            </header>
+            <div class="toast-body">
+                Voce possui 1 mensagem não lida
+                <div class="mt-2 pt-2 border-top">
+                    <button class="btn btn-danger" data-bs-dismiss="toast">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script>
+        const ativadorToast = document.getElementById('avisos')
+        const mensagem = document.getElementById('mensagensAlerta')
+
+        if(ativadorToast){
+            ativadorToast.addEventListener('click', function(){
+                const toast = new bootstrap.Toast(mensagem)
+                toast.show()
+            })
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.navbar-nav .nav-link .active {
+    color: #fff;
+}
+
+section {
+    height: 100vh;
+    background-color: blueviolet;
+}

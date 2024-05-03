@@ -1,0 +1,22 @@
+$corPrincipal: #eee;
+$corTexto: red;
+
+header {
+    h1 {
+        color: $corTexto;
+    }
+}
+
+button {
+    padding: 16px;
+    background-color: $corTexto;
+    color: $corPrincipal;
+
+    &:hover {
+        background-color: yellow;
+    }
+}
+
+body {
+    background-color: $corPrincipal;
+}

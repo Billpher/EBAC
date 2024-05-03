@@ -1,0 +1,18 @@
+header h1 {
+  color: red;
+}
+
+button {
+  padding: 16px;
+  background-color: red;
+  color: #eee;
+}
+button:hover {
+  background-color: yellow;
+}
+
+body {
+  background-color: #eee;
+}
+
+/*# sourceMappingURL=style.css.map */

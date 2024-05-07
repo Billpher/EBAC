@@ -82,19 +82,22 @@ section {
     .container {
         max-width: 80%;
     }
-
-    .products {
-        grid-template-columns: repeat(2, 48.5%);
-        column-gap: 3%;
+    section {
+        .products {
+            grid-template-columns: repeat(2, 48.5%);
+            column-gap: 3%;
+        }
     }
 }
 
 @media screen and (max-width: variaveis.$mobile) {
-    .products {
-        display: block;
-    }
+    section {
+        .products {
+            display: block;
 
-    .product-item  {
-        margin-bottom: 32px;
+            .product-item  {
+                margin-bottom: 32px;
+            }
+        }
     }
 }

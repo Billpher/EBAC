@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const imagemin = require('gulp-imagemin')
-const uglify = require('gulp-uglify');//comprime o codigo js
+const uglify = require('gulp-uglify'); //comprime o codigo js
 const obfuscate = require('gulp-obfuscate'); //serve para criptografar o javascript
 
 function compilarSass() {

@@ -1,4 +1,4 @@
-let alunos = new Set([
+let alunos = [
     { nome: "Ana", nota: 10 },
     { nome: "Bruno", nota: 2 },
     { nome: "Carla", nota: 8 },
@@ -14,15 +14,10 @@ let alunos = new Set([
     { nome: "Nathalia", nota: 8 },
     { nome: "Otávio", nota: 4 },
     { nome: "Patrícia", nota: 6 }
-]);  
+];
 
 const retornaNota = (lista) => {
-    lista.forEach((aluno) => {
-        if(aluno.nota >= 6){
-            console.log(aluno);
-        }
-    })
+    lista.filter(aluno => aluno.nota >= 6).forEach(aluno => console.log(aluno));
 }
 
 retornaNota(alunos);
-

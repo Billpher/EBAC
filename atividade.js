@@ -17,11 +17,7 @@ let alunos = new Set([
 ]);  
 
 const retornaNota = (lista) => {
-    lista.forEach((aluno) => {
-        if(aluno.nota >= 6){
-            console.log(aluno);
-        }
-    })
+    lista.filter(aluno => aluno.nota >= 6).forEach(aluno => console.log(aluno));
 }
 
 retornaNota(alunos);

@@ -1,5 +1,0 @@
-//iniciar typescript
-npx tsc --init
-
-//transformar em JS
-npx tsc

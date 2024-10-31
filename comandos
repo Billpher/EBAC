@@ -3,3 +3,6 @@ npx tsc --init
 
 //transformar em JS
 npx tsc
+
+///executar o js
+node src/exercicio.js
